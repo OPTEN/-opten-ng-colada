@@ -1,6 +1,6 @@
 {
 	"name": "@opten/rxjs",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "rxjs helper functions and classes",
 	"keywords": [
 		"opten",
@@ -13,8 +13,8 @@
 	"publishConfig": {
 		"registry": "http://nuget.oss-concept.ch/npm/npm-v1/"
 	},
-  "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
-  }
+	"peerDependencies": {
+		"@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+		"@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+	}
 }
