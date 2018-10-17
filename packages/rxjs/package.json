@@ -1,0 +1,20 @@
+{
+	"name": "@opten/rxjs",
+	"version": "1.0.0",
+	"description": "rxjs helper functions and classes",
+	"keywords": [
+		"opten",
+		"rxjs",
+		"angular"
+	],
+	"author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
+	"license": "MIT",
+	"main": "index.ts",
+	"publishConfig": {
+		"registry": "http://nuget.oss-concept.ch/npm/npm-v1/"
+	},
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  }
+}
