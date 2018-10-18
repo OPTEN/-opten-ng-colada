@@ -9,7 +9,7 @@
 	],
 	"author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
 	"license": "MIT",
-	"main": "index.ts",
+	"main": "lib/index.ts",
 	"publishConfig": {
 		"registry": "http://nuget.oss-concept.ch/npm/npm-v1/"
 	},
