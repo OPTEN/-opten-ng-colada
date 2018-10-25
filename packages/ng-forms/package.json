@@ -1,11 +1,6 @@
 {
 	"name": "@opten/ng-forms",
 	"version": "0.1.1",
-	"peerDependencies": {
-		"@angular/common": "^7.0.1",
-		"@angular/core": "^7.0.1",
-		"@ngx-translate/core": "^10.0.2"
-	},
 	"author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
 	"license": "MIT",
 	"main": "dist/bundles/opten-ng-forms.umd.js",
@@ -18,6 +13,11 @@
 	"typings": "dist/opten-ng-forms.d.ts",
 	"metadata": "dist/opten-ng-forms.metadata.json",
 	"sideEffects": false,
+	"peerDependencies": {
+		"@angular/common": "^7.0.1",
+		"@angular/core": "^7.0.1",
+		"@ngx-translate/core": "^10.0.2"
+	},
 	"dependencies": {
 		"tslib": "^1.9.0"
 	}

@@ -1,22 +1,9 @@
 {
 	"name": "@opten/rxjs",
 	"version": "1.1.2",
-	"description": "rxjs helper functions and classes",
-	"keywords": [
-		"opten",
-		"rxjs",
-		"angular"
-	],
 	"author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
 	"license": "MIT",
 	"main": "dist/bundles/opten-rxjs.umd.js",
-	"publishConfig": {
-		"registry": "http://nuget.oss-concept.ch/npm/npm-v1/"
-	},
-	"peerDependencies": {
-		"@angular/common": "^7.0.1",
-		"@angular/core": "^7.0.1"
-	},
 	"module": "dist/fesm5/opten-rxjs.js",
 	"es2015": "dist/fesm2015/opten-rxjs.js",
 	"esm5": "dist/esm5/opten-rxjs.js",
@@ -26,6 +13,10 @@
 	"typings": "dist/opten-rxjs.d.ts",
 	"metadata": "dist/opten-rxjs.metadata.json",
 	"sideEffects": false,
+	"peerDependencies": {
+		"@angular/common": "^7.0.1",
+		"@angular/core": "^7.0.1"
+	},
 	"dependencies": {
 		"tslib": "^1.9.0"
 	}
