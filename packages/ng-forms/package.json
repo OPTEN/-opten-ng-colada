@@ -2,11 +2,23 @@
 	"name": "@opten/ng-forms",
 	"version": "0.1.0",
 	"peerDependencies": {
-		"@angular/common": "^7.0.0",
-		"@angular/core": "^7.0.0",
+		"@angular/common": "^7.0.1",
+		"@angular/core": "^7.0.1",
 		"@ngx-translate/core": "^10.0.2"
 	},
 	"author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
 	"license": "MIT",
-	"main": "lib/index.ts"
+	"main": "dist/bundles/opten-ng-forms.umd.js",
+	"module": "dist/fesm5/opten-ng-forms.js",
+	"es2015": "dist/fesm2015/opten-ng-forms.js",
+	"esm5": "dist/esm5/opten-ng-forms.js",
+	"esm2015": "dist/esm2015/opten-ng-forms.js",
+	"fesm5": "dist/fesm5/opten-ng-forms.js",
+	"fesm2015": "dist/fesm2015/opten-ng-forms.js",
+	"typings": "dist/opten-ng-forms.d.ts",
+	"metadata": "dist/opten-ng-forms.metadata.json",
+	"sideEffects": false,
+	"dependencies": {
+		"tslib": "^1.9.0"
+	}
 }
