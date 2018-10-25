@@ -2,8 +2,8 @@
 	"name": "@opten/ng-forms",
 	"version": "0.0.1",
 	"peerDependencies": {
-		"@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-		"@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+		"@angular/common": "^7.0.0",
+		"@angular/core": "^7.0.0",
 		"@ngx-translate/core": "^10.0.2"
 	},
 	"author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
