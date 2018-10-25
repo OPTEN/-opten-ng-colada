@@ -23,6 +23,12 @@
       ],
       "rxjs/*": [
         "dist/rxjs/*"
+      ],
+      "ng-forms": [
+        "dist/ng-forms"
+      ],
+      "ng-forms/*": [
+        "dist/ng-forms/*"
       ]
     }
   }
