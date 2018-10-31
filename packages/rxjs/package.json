@@ -1,23 +1,23 @@
 {
-	"name": "@opten/rxjs",
-	"version": "1.1.3",
-	"author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
-	"license": "MIT",
-	"main": "dist/bundles/opten-rxjs.umd.js",
-	"module": "dist/fesm5/opten-rxjs.js",
-	"es2015": "dist/fesm2015/opten-rxjs.js",
-	"esm5": "dist/esm5/opten-rxjs.js",
-	"esm2015": "dist/esm2015/opten-rxjs.js",
-	"fesm5": "dist/fesm5/opten-rxjs.js",
-	"fesm2015": "dist/fesm2015/opten-rxjs.js",
-	"typings": "dist/opten-rxjs.d.ts",
-	"metadata": "dist/opten-rxjs.metadata.json",
-	"sideEffects": false,
-	"peerDependencies": {
-		"@angular/common": "^7.0.1",
-		"@angular/core": "^7.0.1"
-	},
-	"dependencies": {
-		"tslib": "^1.9.0"
-	}
+  "name": "@opten/rxjs",
+  "version": "1.1.3",
+  "author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
+  "license": "MIT",
+  "main": "bundles/opten-rxjs.umd.js",
+  "module": "fesm5/opten-rxjs.js",
+  "es2015": "fesm2015/opten-rxjs.js",
+  "esm5": "esm5/opten-rxjs.js",
+  "esm2015": "esm2015/opten-rxjs.js",
+  "fesm5": "fesm5/opten-rxjs.js",
+  "fesm2015": "fesm2015/opten-rxjs.js",
+  "typings": "opten-rxjs.d.ts",
+  "metadata": "opten-rxjs.metadata.json",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@angular/common": "^7.0.1",
+    "@angular/core": "^7.0.1"
+  },
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
 }

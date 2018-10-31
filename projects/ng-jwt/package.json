@@ -1,0 +1,22 @@
+{
+	"name": "@opten/ng-jwt",
+	"version": "0.0.1",
+	"author": "Calvin <calvin.frei@opten.ch>",
+	"license": "MIT",
+	"main": "dist/bundles/opten-ng-jwt.umd.js",
+	"module": "dist/fesm5/opten-ng-jwt.js",
+	"es2015": "dist/fesm2015/opten-ng-jwt.js",
+	"esm5": "dist/esm5/opten-ng-jwt.js",
+	"esm2015": "dist/esm2015/opten-ng-jwt.js",
+	"fesm5": "dist/fesm5/opten-ng-jwt.js",
+	"fesm2015": "dist/fesm2015/opten-ng-jwt.js",
+	"typings": "dist/opten-ng-jwt.d.ts",
+	"metadata": "dist/opten-ng-jwt.metadata.json",
+	"sideEffects": false,
+	"peerDependencies": {
+		"@angular/core": "^7.0.1"
+	},
+	"dependencies": {
+		"tslib": "^1.9.0"
+	}
+}
