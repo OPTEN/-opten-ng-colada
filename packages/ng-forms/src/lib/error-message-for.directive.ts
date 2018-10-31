@@ -39,6 +39,7 @@ export class ErrorMessageForDirective implements AfterViewChecked, OnDestroy {
 	}
 
 	ngOnDestroy() {
+		// Das ist ein test
 		if (this._translateSubscription) {
 			this._translateSubscription.unsubscribe();
 		}
