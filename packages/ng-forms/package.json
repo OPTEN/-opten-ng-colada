@@ -1,6 +1,6 @@
 {
   "name": "@opten/ng-forms",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Severin d'Heureuse <severin.dheureuse@opten.ch>",
   "license": "MIT",
   "main": "bundles/opten-ng-forms.umd.js",

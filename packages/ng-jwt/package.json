@@ -1,6 +1,6 @@
 {
   "name": "@opten/ng-jwt",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Calvin <calvin.frei@opten.ch>",
   "license": "MIT",
   "main": "bundles/opten-ng-jwt.umd.js",
