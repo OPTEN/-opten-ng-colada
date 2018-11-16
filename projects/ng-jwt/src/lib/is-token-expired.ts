@@ -1,12 +1,12 @@
 import { JwtTokenResponse } from './jwt-token-response';
 
 function getTokenExpirationDate(token: JwtTokenResponse): Date {
-	if (!token || token == null || !token.expiration) {
+	if (!token || token == null || !token.expires_in) {
 		return null;
 	}
 
 	const date: Date = new Date(0); // The 0 here is the key, which sets the date to the epoch
-	date.setUTCSeconds(token.expiration);
+	date.setUTCSeconds(token.expires_in);
 
 	return date;
 }
