@@ -105,10 +105,6 @@ export class JwtInterceptor implements HttpInterceptor {
 
 	// todo: @opten/gin-tonic?
 	private _getHost(href: string) {
-		if (window.URL) {
-			return new URL(href).host;
-		}
-
 		// IE 11 and Edge throw 'Object doesn't support this action' for new URL(...).host.
 		// The weird problem is, that IE 11 and Edge support window.URL but not if you init it by yourself.
 		return href.match(
