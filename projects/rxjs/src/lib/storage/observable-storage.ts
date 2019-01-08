@@ -4,12 +4,12 @@ import { share } from 'rxjs/operators';
 import { Storage as Store } from './storage';
 
 export abstract class ObservableStorage<TData> implements Store<TData> {
-	private _subject: Subject<TData> = new BehaviorSubject<TData>(this.parse());
+	private subject: Subject<TData> = new BehaviorSubject<TData>(this.parse());
 
-	constructor(private _key: string, private _storageProvider: Storage) {}
+	constructor(private key: string, private storageProvider: Storage) {}
 
 	change(): Observable<TData> {
-		return this._subject.asObservable().pipe(share());
+		return this.subject.asObservable().pipe(share());
 	}
 
 	get(): Observable<TData> {
@@ -17,17 +17,17 @@ export abstract class ObservableStorage<TData> implements Store<TData> {
 	}
 
 	set(data: TData): void {
-		this._storageProvider.setItem(this._key, JSON.stringify(data));
-		this._subject.next(this.parse());
+		this.storageProvider.setItem(this.key, JSON.stringify(data));
+		this.subject.next(this.parse());
 	}
 
 	clear() {
-		this._storageProvider.removeItem(this._key);
-		this._subject.next(this.parse());
+		this.storageProvider.removeItem(this.key);
+		this.subject.next(this.parse());
 	}
 
 	protected parse(): TData {
-		const item: string = this._storageProvider.getItem(this._key);
+		const item: string = this.storageProvider.getItem(this.key);
 
 		if (!item || item == null) {
 			return null;

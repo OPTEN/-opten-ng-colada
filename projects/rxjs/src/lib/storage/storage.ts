@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
 
-export interface Storage<TData> {
-	get: () => TData | Observable<TData> | Promise<TData>;
-	set: (data: TData) => void;
+export interface Storage<T> {
+	get: () => T | Observable<T> | Promise<T>;
+	set: (data: T) => void;
 	clear: () => void;
 }

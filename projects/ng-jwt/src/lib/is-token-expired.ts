@@ -5,7 +5,8 @@ function getTokenExpirationDate(token: JwtTokenResponse): Date {
 		return null;
 	}
 
-	const date: Date = new Date(0); // The 0 here is the key, which sets the date to the epoch
+	// The 0 here is the key, which sets the date to the epoch
+	const date: Date = new Date(0);
 	date.setUTCSeconds(token.expires_in);
 
 	return date;

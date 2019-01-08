@@ -35,10 +35,10 @@ export class TokenService {
 	}
 
 	/**
-	 * This method gets the token from the storage
-	 * check if it is still valid if it is it will be returned
+	 * Gets the token from the storage
+	 * checks if it is still valid. If the token is it will be returned
 	 * otherwise the token endpoint will be called to create a new token
-	 * with the refresh_token
+	 * with the refresh_token.
 	 */
 	get(): Observable<JwtTokenResponse> {
 		return this.config.getToken().pipe(
