@@ -76,10 +76,7 @@ export class JwtInterceptor implements HttpInterceptor {
 	): HttpRequest<any> {
 		if (
 			token &&
-			this._isWhitelistedHost(
-				request.url,
-				this._config.whitelistedDomains
-			)
+			this.isWhitelistedHost(request.url, this._config.whitelistedDomains)
 		) {
 			return request.clone({
 				headers: headers.set(
@@ -93,22 +90,29 @@ export class JwtInterceptor implements HttpInterceptor {
 	}
 
 	// todo: @opten/gin-tonic?
-	private _isWhitelistedHost(url: string, whitelist: Array<string>): boolean {
-		const host: string = this._getHost(url);
+	private isWhitelistedHost(url: string, whitelist: Array<string>): boolean {
+		const host: string = this.getHost(url);
 
 		return (
+			host &&
 			whitelist
-				.map(o => this._getHost(o).toLowerCase())
+				.map(o => this.getHost(o).toLowerCase())
 				.indexOf(host.toLowerCase()) > -1
 		);
 	}
 
 	// todo: @opten/gin-tonic?
-	private _getHost(href: string) {
+	private getHost(href: string) {
 		// IE 11 and Edge throw 'Object doesn't support this action' for new URL(...).host.
 		// The weird problem is, that IE 11 and Edge support window.URL but not if you init it by yourself.
-		return href.match(
+		const matches = href.match(
 			/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/
-		)[2];
+		);
+
+		if (matches && matches.length > 2) {
+			return matches[2];
+		}
+
+		return null;
 	}
 }
